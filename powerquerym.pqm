@@ -1,0 +1,3 @@
+// Add acolumn with type in a single line like Dataflows does but Power BI Desktop does not.
+Table.TransformColumnTypes(Table.AddColumn(#"previous", "colname", each Text.BeforeDelimiter([DOKTXT], ";")), {{"colname", type text}})
+
